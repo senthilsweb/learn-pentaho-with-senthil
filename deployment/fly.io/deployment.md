@@ -9,27 +9,25 @@
 - [ ] Fly.io account
 - [ ] [flyctl CLI](https://fly.io/docs/getting-started/launch/) to be installed.
 - [ ] `fly.toml` deployment configuration file
-- [ ] Pentaho Developer Edition 10.2.0.0-222. This requires registration before you download.
-
-Here’s the updated section of your document with the specified changes:
+- [ ] [Pentaho Developer Edition](https://pentaho.com/pentaho-developer-edition/#communityProducts) 10.2.0.0-222. This requires registration before you download.
 
 ### Preparing the Code
 
 - Clone the repository: 
 
 ```bash
-git clone https://github.com/senthilsweb/learning-pentaho-with-me.git
+git clone https://github.com/senthilsweb/learn-pentaho-with-senthil
 ```
 
 - Navigate to the Fly.io deployment folder:
 
 ```bash
-cd learning-pentaho-with-me/deployment/fly.io
+cd learn-pentaho-with-senthil/deployment/fly.io
 ```
 
 - Ensure that you have a `fly.toml` file located in the root of your repository.
 
-- Download the Pentaho Developer Edition `pdi-ce-10.2.0.0-222.zip` and extract it.
+- Download the [Pentaho Developer Edition](https://pentaho.com/pentaho-developer-edition/#communityProducts) `pdi-ce-10.2.0.0-222.zip` and extract it.
 
 - After everything is done, the folder structure should look like this:
 
@@ -44,45 +42,43 @@ cd learning-pentaho-with-me/deployment/fly.io
 │   │   ├── repositories.xml
 │   │   └── metastore
 │   └── jdbc-drivers
-│       └── (JDBC driver files)
+│       └── (JDBC driver files. I kept it as empty)
 └── jobs
     └── (PDI job files and example datasets)
 ```
 
 ## Deployment at Fly.io
 
+- **Install flyctl**
 ```
-# Install flyctl
+
 curl -L https://fly.io/install.sh | sh
-# Sign in to your Fly.io account
+```
+- **Sign in to your Fly.io account**
+```
 fly auth login
-# Launch the Carte server named `learn-pentaho-with-senthil`
+```
+- **Launch the Carte server named `learn-pentaho-with-senthil`**
+```
 fly launch
-# Follow the command prompt
-# Check your app’s status
+```
+- **Follow the command prompt**
+
+- **Check your app’s status**
+```
 fly status
 ```
 
 ## Visit the Application 
 
-Visit the `carte` server at [https://[your-app-name].fly.dev/kettle/status](https://learn-pentaho-with-me.fly.dev/kettle/status/)
-Basic authentication is enabled; in the prompt, enter the login credentials as `cluster` for both the username and password (or whatever you set).
-
-
-Here’s the updated section that includes the mention of API endpoints and the generic `curl` command:
-
----
-
-## Visit the Application 
-
-Visit the `carte` server at [https://[your-app-name].fly.dev/kettle/status](https://learn-pentaho-with-me.fly.dev/kettle/status/). Basic authentication is enabled; in the prompt, enter the login credentials as `cluster` for both the username and password (or whatever you set).
+Visit the `carte` server at [https://[your-app-name].fly.dev/kettle/status](https://[your-app-name].fly.dev/kettle/status/). Basic authentication is enabled; in the prompt, enter the login credentials as `cluster` for both the username and password (or whatever you set).
 
 ### API Endpoints Example
 
 You can use the following API endpoint to execute a transformation:
 
 ```
-GET https://learn-pentaho-with-me.fly.dev/kettle/executeTrans?trans=/path-to/your-transformation-file.ktr
+GET https://[your-app-name].fly.dev/kettle/executeTrans?trans=/path-to/your-transformation-file.ktr
 ```
 
 ### Curl Command Example
@@ -90,7 +86,7 @@ GET https://learn-pentaho-with-me.fly.dev/kettle/executeTrans?trans=/path-to/you
 To execute the transformation via `curl`, use the following command:
 
 ```bash
-curl --location 'https://learn-pentaho-with-me.fly.dev/kettle/executeTrans?trans=/path-to/your-transformation-file.ktr' \
+curl --location 'https://[your-app-name].fly.dev/kettle/executeTrans?trans=/path-to/your-transformation-file.ktr' \
 --header 'Authorization: Basic username:password'
 ```
 
@@ -99,9 +95,13 @@ curl --location 'https://learn-pentaho-with-me.fly.dev/kettle/executeTrans?trans
 ```
 # Deploy changes
 fly deploy
+
+# SSH into the vm
+flyctl ssh console -C /bin/sh   
+
 # Delete the app
 fly apps destroy [your-app-name]
+
 # List mounted volumes
 fly volumes list      
 ```
-

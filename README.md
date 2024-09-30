@@ -53,7 +53,7 @@ cd learning-pentaho-with-me/deployment/fly.io
 
 ## Deployment at Fly.io
 
-- - **Install flyctl**
+- **Install flyctl**
 ```
 
 curl -L https://fly.io/install.sh | sh

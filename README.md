@@ -15,8 +15,6 @@ This repository is dedicated to exploring and learning Pentaho, a versatile data
 - [ ] `fly.toml` deployment configuration file
 - [ ] Pentaho Developer Edition 10.2.0.0-222. This requires registration before you download.
 
-Here’s the updated section of your document with the specified changes:
-
 ### Preparing the Code
 
 - Clone the repository: 
@@ -55,15 +53,23 @@ cd learning-pentaho-with-me/deployment/fly.io
 
 ## Deployment at Fly.io
 
+- - **Install flyctl**
 ```
-# Install flyctl
+
 curl -L https://fly.io/install.sh | sh
-# Sign in to your Fly.io account
+```
+- **Sign in to your Fly.io account**
+```
 fly auth login
-# Launch the Carte server named `learn-pentaho-with-senthil`
+```
+- **Launch the Carte server named `learn-pentaho-with-senthil`**
+```
 fly launch
-# Follow the command prompt
-# Check your app’s status
+```
+- **Follow the command prompt**
+
+- **Check your app’s status**
+```
 fly status
 ```
 

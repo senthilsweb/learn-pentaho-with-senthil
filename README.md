@@ -75,16 +75,6 @@ fly status
 
 ## Visit the Application 
 
-Visit the `carte` server at [https://[your-app-name].fly.dev/kettle/status](https://learn-pentaho-with-me.fly.dev/kettle/status/)
-Basic authentication is enabled; in the prompt, enter the login credentials as `cluster` for both the username and password (or whatever you set).
-
-
-Here’s the updated section that includes the mention of API endpoints and the generic `curl` command:
-
----
-
-## Visit the Application 
-
 Visit the `carte` server at [https://[your-app-name].fly.dev/kettle/status](https://learn-pentaho-with-me.fly.dev/kettle/status/). Basic authentication is enabled; in the prompt, enter the login credentials as `cluster` for both the username and password (or whatever you set).
 
 ### API Endpoints Example

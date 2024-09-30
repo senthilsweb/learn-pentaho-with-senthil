@@ -1,0 +1,17 @@
+<slave_config>
+    <slaveserver>
+        <name>carte</name>
+        <hostname>localhost</hostname>
+        <port>5000</port>
+        <username>admin</username>
+        <password>password</password>
+        <master>Y</master>
+    </slaveserver>
+
+    <repository>
+        <name>Pentaho</name>
+        <username>admin</username>
+        <password>password</password>
+        <version_comment_mandatory>N</version_comment_mandatory>
+    </repository>
+</slave_config>

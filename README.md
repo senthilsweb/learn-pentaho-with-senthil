@@ -1,6 +1,6 @@
 # learn-pentaho-with-senthil
 
-This repository is dedicated to exploring and learning Pentaho, a versatile data integration and analytics platform. Here, you'll find various examples, tutorials, and resources focused on ETL processes, data lake management, reporting, and visualization using Pentaho. The goal is to provide insights and practical knowledge for anyone looking to harness the power of Pentaho in their data engineering projects. Join me on this journey to master data management and analytics with Pentaho!
+This repository is dedicated to exploring and learning Pentaho, a versatile data integration and analytics platform. Here, you'll find various examples, tutorials, and resources focused on ETL processes, data lake management, reporting, and visualization using Pentaho. The goal is to provide insights and practical knowledge for anyone looking to harness the power of Pentaho in their data engineering projects. 
 
 ## Deploying Pentaho Carte Server in Firecracker VM at Fly.io
 

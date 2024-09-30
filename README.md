@@ -99,8 +99,13 @@ curl --location 'https://[your-app-name].fly.dev/kettle/executeTrans?trans=/path
 ```
 # Deploy changes
 fly deploy
+
+# SSH into the vm
+flyctl ssh console -C /bin/sh   
+
 # Delete the app
 fly apps destroy [your-app-name]
+
 # List mounted volumes
 fly volumes list      
 ```

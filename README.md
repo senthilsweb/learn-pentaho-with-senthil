@@ -13,7 +13,7 @@ This repository is dedicated to exploring and learning Pentaho, a versatile data
 - [ ] Fly.io account
 - [ ] [flyctl CLI](https://fly.io/docs/getting-started/launch/) to be installed.
 - [ ] `fly.toml` deployment configuration file
-- [ ] Pentaho Developer Edition 10.2.0.0-222. This requires registration before you download.
+- [ ] [Pentaho Developer Edition](https://pentaho.com/pentaho-developer-edition/#communityProducts) 10.2.0.0-222. This requires registration before you download.
 
 ### Preparing the Code
 

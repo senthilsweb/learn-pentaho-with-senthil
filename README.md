@@ -48,7 +48,7 @@ cd learning-pentaho-with-me/deployment/fly.io
 │   │   ├── repositories.xml
 │   │   └── metastore
 │   └── jdbc-drivers
-│       └── (JDBC driver files)
+│       └── (JDBC driver files. I kept it as empty)
 └── jobs
     └── (PDI job files and example datasets)
 ```

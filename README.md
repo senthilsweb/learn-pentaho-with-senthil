@@ -26,7 +26,7 @@ git clone https://github.com/senthilsweb/learn-pentaho-with-senthil
 - Navigate to the Fly.io deployment folder:
 
 ```bash
-cd learning-pentaho-with-me/deployment/fly.io
+cd learn-pentaho-with-senthil/deployment/fly.io
 ```
 
 - Ensure that you have a `fly.toml` file located in the root of your repository.

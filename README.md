@@ -75,14 +75,14 @@ fly status
 
 ## Visit the Application 
 
-Visit the `carte` server at [https://[your-app-name].fly.dev/kettle/status](https://learn-pentaho-with-me.fly.dev/kettle/status/). Basic authentication is enabled; in the prompt, enter the login credentials as `cluster` for both the username and password (or whatever you set).
+Visit the `carte` server at [https://[your-app-name].fly.dev/kettle/status](https://[your-app-name].fly.dev/kettle/status/). Basic authentication is enabled; in the prompt, enter the login credentials as `cluster` for both the username and password (or whatever you set).
 
 ### API Endpoints Example
 
 You can use the following API endpoint to execute a transformation:
 
 ```
-GET https://learn-pentaho-with-me.fly.dev/kettle/executeTrans?trans=/path-to/your-transformation-file.ktr
+GET https://[your-app-name].fly.dev/kettle/executeTrans?trans=/path-to/your-transformation-file.ktr
 ```
 
 ### Curl Command Example
@@ -90,7 +90,7 @@ GET https://learn-pentaho-with-me.fly.dev/kettle/executeTrans?trans=/path-to/you
 To execute the transformation via `curl`, use the following command:
 
 ```bash
-curl --location 'https://learn-pentaho-with-me.fly.dev/kettle/executeTrans?trans=/path-to/your-transformation-file.ktr' \
+curl --location 'https://[your-app-name].fly.dev/kettle/executeTrans?trans=/path-to/your-transformation-file.ktr' \
 --header 'Authorization: Basic username:password'
 ```
 

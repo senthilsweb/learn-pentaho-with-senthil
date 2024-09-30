@@ -31,7 +31,7 @@ cd learn-pentaho-with-senthil/deployment/fly.io
 
 - Ensure that you have a `fly.toml` file located in the root of your repository.
 
-- Download the Pentaho Developer Edition `pdi-ce-10.2.0.0-222.zip` and extract it.
+- Download the [Pentaho Developer Edition](https://pentaho.com/pentaho-developer-edition/#communityProducts) `pdi-ce-10.2.0.0-222.zip` and extract it.
 
 - After everything is done, the folder structure should look like this:
 

@@ -34,4 +34,4 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-/pdi-ce-10.2.0.0-222
+deployment/fly.io/pdi-ce-10.2.0.0-222/*
